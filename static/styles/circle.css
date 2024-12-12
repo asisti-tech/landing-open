@@ -1,0 +1,41 @@
+.circle-info {
+  padding: 75px 43px 66px 43px;
+  background: linear-gradient(180deg, #cfe2fe 0%, #cfe2fe 100%);
+}
+
+@media screen and (max-width: 848px) {
+  .circle-info {
+    display: none;
+  }
+}
+
+.circle-title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #0f3f62;
+  margin-bottom: 80px;
+}
+
+.circle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  width: 70%;
+  height: 70%;
+  overflow: visible;
+}
+
+.circle > text {
+  fill: #0f3f62;
+  font-weight: 400;
+  font-size: 24px;
+  transition: all 0.5s;
+}
+
+.circle > g {
+  cursor: pointer;
+  transition: all 0.5s;
+}

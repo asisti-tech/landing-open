@@ -1,0 +1,128 @@
+.info {
+  margin-bottom: 25px;
+}
+
+.info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-title {
+  font-weight: 500;
+  font-size: 46px;
+  color: #0f3f62;
+}
+
+.info-descr {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #0f3f62;
+}
+
+.text-logo {
+  font-family: "Space Age Cyrillic", sans-serif;
+  font-weight: 400;
+}
+
+.main-man {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.new-man {
+  display: none;
+}
+
+.what-is-asisti {
+  background: linear-gradient(180deg, #fff 0%, #cfe2fe 100%);
+  width: 100%;
+  height: 293px;
+  padding: 43px 43px 66px 43px;
+}
+
+.what-title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #0f3f62;
+  margin-bottom: 30px;
+}
+
+.what-text {
+  font-weight: 400;
+  font-size: 20px;
+  color: #0f3f62;
+  margin-bottom: 43px;
+}
+.what-text_mobile {
+  display: none;
+}
+.what-text-container_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 848px) {
+  .info-wrapper {
+    justify-content: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    margin-top: 80px;
+  }
+
+  .info-title {
+    font-size: 32px;
+  }
+
+  .info-descr {
+    font-size: 16px;
+  }
+
+  .main-man {
+    display: none;
+  }
+
+  .new-man {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 617px;
+    width: auto;
+  }
+  .what-is-asisti {
+    padding: 25px 25px 0 25px;
+  }
+  .what-title {
+    font-weight: 500;
+    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .what-text {
+    display: none;
+  }
+  .what-text_mobile {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    color: #0f3f62;
+  }
+  .what-text-container_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .what-span_mobile {
+    font-weight: 500;
+    font-size: 19px;
+  }
+}

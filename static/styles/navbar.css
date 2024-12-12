@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 274px;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.navbar-wrapper a {
+  font-weight: 400;
+  font-size: 16px;
+  color: #0f3f62;
+}
+
+@media screen and (max-width: 848px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  .navbar-wrapper {
+    display: none;
+  }
+}

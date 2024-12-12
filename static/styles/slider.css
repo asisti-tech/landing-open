@@ -1,0 +1,41 @@
+.functional-slider-container {
+    display: none;
+    overflow-y: hidden;
+    width: 107%;
+  }
+
+
+.swiper-container {
+    width: 110%;
+    max-width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 110%;
+    height: 110%;
+    
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #000;
+}
+
+
+@media screen and (max-width: 700px) {
+  .functional-slider-container {
+    display: block;
+  }
+}

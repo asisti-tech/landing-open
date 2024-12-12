@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "./base.css";
+@import "./buttons.css";
+@import "./navbar.css";
+@import "./sections.css";
+@import "./animations.css";
+@import "./chart.css";
+@import "./functional.css";
+@import "./circle.css";
+@import "./cooperation.css";
+@import "./linksTo_mobile.css";
+@import "./slider.css";
+
+@font-face {
+  font-family: "Space Age Cyrillic";
+  src: url(../fonts//spaceagecyrillic_regular.ttf);
+}
+
+.footer {
+  padding: 75px 43px;
+  background: #ebf8ff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 66px;
+}
+
+.footer-item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #54c1fb !important;
+}
+
+#top:hover {
+  transform: translateY(-10px);
+  transition: all 0.2s;
+}
+
+@media screen and (max-width: 848px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+}

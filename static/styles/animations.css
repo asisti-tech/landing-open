@@ -1,0 +1,18 @@
+.message-rigth {
+    margin-left: auto;
+    transition: all 1s;
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  
+  .message-left {
+    transition: all 1s;
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  
+  #top:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s;
+  }
+  
