@@ -1,0 +1,88 @@
+.faq {
+    background-color: #f9f9f9;
+    padding: 2rem;
+  }
+  
+  .faq .container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.faq h2 {
+    font-family: 'MuseoSansCyrl';
+    color: #353535;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 51.36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd; /* Общая граница вокруг всего блока FAQ */
+    border-radius: 8px; /* Скругление углов */
+    overflow: hidden; /* Чтобы обрезать внутренние элементы */
+}
+
+.faq-item details {
+    background-color: #fff;
+}
+
+.faq-item details summary {
+    font-size: 1rem;
+    padding: 1.5rem; /* Увеличенная высота кнопок */
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    border-bottom: none; /* Убираем линии между элементами */
+}
+
+.faq-item details summary:hover {
+    background-color: #f7faff; /* Цвет при наведении */
+}
+
+.faq-item details[open] summary {
+    background-color: #e6f7ff; /* Цвет при открытии */
+}
+
+.faq-item details:last-child summary {
+    border-bottom: none; /* Убираем нижнюю линию у последнего элемента */
+}
+
+.faq-item details p {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.faq-item details summary::-webkit-details-marker {
+    display: none; /* Убираем стандартный значок раскрытия */
+}
+
+/* Иконка стрелки раскрытия */
+.faq-item details summary::after {
+    content: '▼';
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    color: #999;
+    transform: rotate(0);
+    transition: transform 0.3s ease;
+}
+
+.faq-item details[open] summary::after {
+    transform: rotate(-180deg); /* Поворачиваем стрелку при открытии */
+    color: #54c1fb;
+}

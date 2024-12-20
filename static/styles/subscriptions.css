@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url(../fonts//museosanscyrl-500.ttf);
+}
+  
+
+.subscriptions {
+    font-family: 'MuseoSansCyrl', sans-serif;
+    padding: 3rem 0;
+    text-align: center;
+    background: linear-gradient(180deg, #E3F1FF 0%, #F4F9FF 100%);
+}
+
+/* Заголовок */
+.subscriptions h1 {
+    font-family: 'MuseoSansCyrl';
+    color: #353535;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 51.36px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 20px;
+    padding-left: 60px;
+}
+
+.features p {
+    font-family: 'MuseoSansCyrl';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.pricing-title {
+    font-family: 'MuseoSansCyrl';
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Информационный блок */
+.features {
+    font-family: 'MuseoSansCyrl';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 0 auto 3rem auto; /* Добавлен нижний отступ */
+    background: radial-gradient(64.68% 110.5% at 50% 50%, #73CAFF 0%, #3576C2 100%);
+    width: 1080px;
+    height: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.features ul {
+    font-family: 'MuseoSansCyrl';
+    list-style: none;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.features li {
+    font-family: 'MuseoSansCyrl';
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.features .icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Картинка справа */
+.features-card {
+    flex-shrink: 0;
+    width: 200px;
+    transform: rotate(10deg);
+}
+
+.features-card img {
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок блока с ценами */
+.pricing-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 60px;
+}
+
+/* Блок с ценами */
+.pricing {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Уменьшен промежуток для лучшего выравнивания */
+    margin: 0 auto;
+    width: 1080px; /* Выравнивание ширины */
+}
+
+.plan {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    width: 268px;
+    height: 242px;
+}
+
+/* Синее свечение появляется только при наведении */
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px 0px #559BEDB2;
+}
+
+.plan h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.plan p {
+    font-size: 48px;
+    color: #4FAAF3;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.plan span {
+    font-size: 1rem;
+    color: #777;
+}
+
+.plan .discount {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    padding: 5px 8px;
+}
+
+.plan .tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
