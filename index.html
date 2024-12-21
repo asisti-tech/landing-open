@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="./static/styles/main.css" />
     <link rel="stylesheet" href="./static/styles/reset.css" />
     <link rel="stylesheet" href="./static/styles/slider.css" />
-    <link rel="stylesheet" href="./static/styles/global.css">
-    <link rel="stylesheet" href="./static/styles/subscriptions.css">
-    <link rel="stylesheet" href="./static/styles/contact.css">
-    <link rel="stylesheet" href="./static/styles/faq.css">
+    <link rel="stylesheet" href="./static/styles/circle-anim.css" />
+    <link rel="stylesheet" href="./static/styles/sms_style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="../static/js/circle_animation.js"></script>
     <title>Asisti</title>
   </head>
   <body>
@@ -129,11 +128,11 @@
             />
           </g>
           <g class="right-sigment">
-            <path
+            <path class="right-path"
               d="M557.404 375.404C571.78 361.029 583.183 343.963 590.963 325.18C598.743 306.397 602.748 286.266 602.748 265.936C602.748 245.606 598.743 225.475 590.963 206.693C583.183 187.91 571.78 170.844 557.404 156.468L502.355 211.518C509.501 218.664 515.17 227.148 519.037 236.485C522.905 245.822 524.896 255.83 524.896 265.936C524.896 276.043 522.905 286.05 519.037 295.387C515.17 304.724 509.501 313.208 502.355 320.355L557.404 375.404Z"
               fill="white"
             />
-            <path
+            <path class="right-line"
               d="M580 272H874"
               stroke="white"
               stroke-width="5.89757"
@@ -141,49 +140,49 @@
             />
           </g>
           <g class="top-sigment">
-            <path
+            <path class="top-path"
               d="M555.101 154.481C540.725 140.106 523.659 128.702 504.876 120.922C486.094 113.142 465.963 109.138 445.633 109.138C425.302 109.138 405.171 113.142 386.389 120.922C367.606 128.702 350.54 140.106 336.164 154.481L391.214 209.531C398.36 202.385 406.844 196.716 416.182 192.848C425.519 188.981 435.526 186.99 445.633 186.99C455.739 186.99 465.746 188.981 475.084 192.848C484.421 196.716 492.905 202.385 500.051 209.531L555.101 154.481Z"
               fill="#9593FF"
             />
-            <path
-              d="M446 114L446 3"
+            <path class="top-line"
+              d="M446 114L446 -180"
               stroke="#9593FF"
               stroke-width="5.89757"
               stroke-linecap="round"
             />
           </g>
           <g class="bottom-sigment">
-            <path
+            <path class="bottom-path"
               d="M336.303 376.723C350.679 391.099 367.745 402.502 386.527 410.282C405.31 418.062 425.441 422.067 445.771 422.067C466.101 422.067 486.232 418.062 505.015 410.282C523.798 402.502 540.864 391.099 555.239 376.724L500.19 321.674C493.043 328.82 484.559 334.489 475.222 338.356C465.885 342.224 455.878 344.215 445.771 344.215C435.665 344.215 425.657 342.224 416.32 338.356C406.983 334.489 398.499 328.82 391.353 321.674L336.303 376.723Z"
               fill="#C3FFE9"
             />
-            <path
-              d="M448 416L448 528"
+            <path class="bottom-line"
+              d="M448 416L448 710"
               stroke="#C3FFE9"
               stroke-width="5.89757"
               stroke-linecap="round"
             />
           </g>
           <g class="left-sigment">
-            <path
+            <path class="left-path"
               d="M334.586 156.204C320.211 170.579 308.807 187.646 301.027 206.428C293.247 225.211 289.243 245.342 289.243 265.672C289.243 286.002 293.247 306.133 301.027 324.916C308.807 343.698 320.211 360.764 334.586 375.14L389.636 320.09C382.49 312.944 376.821 304.46 372.953 295.123C369.086 285.786 367.095 275.778 367.095 265.672C367.095 255.565 369.086 245.558 372.953 236.221C376.821 226.884 382.49 218.4 389.636 211.253L334.586 156.204Z"
               fill="#87D5FF"
             />
-            <path
-              d="M3 262L298 262"
+            <path class="left-line"
+              d="M3 262L297 262"
               stroke="#87D5FF"
               stroke-width="5.89757"
               stroke-linecap="round"
             />
           </g>
-          <text x="260px" y="30px" class="top-text">
+          <text x="660px" y="220px" class="top-text">
             Персональный
-            <tspan x="260px" y="55px">подход</tspan>
+            <tspan x="660px" y="240px">подход</tspan>
           </text>
-          <text y="300px" class="left-text">Доступность</text>
-          <text x="470px" y="480px" class="bottom-text">
+          <text x="660px" y="240px" class="left-text">Доступность</text>
+          <text x="660px" y="230px" class="bottom-text">
             Повышение
-            <tspan x="470px" y="505px">эффективности</tspan>
+            <tspan x="660px" y="255px">эффективности</tspan>
           </text>
           <text x="660px" y="230px" class="right-text">
             Непрерывность
@@ -195,10 +194,10 @@
 
     <section class="chat-info">
       <h2 class="chat-title">Специалист всегда на связи</h2>
-      <div class="messages">
+      <div class="messages" id="message-container">
         <div class="message-wrapper message-left">
-          <div class="message-avatar">
-            <img src="./static//img/user.svg" alt="user" />
+          <div class="message-avatar-left">
+            <img src="./static/img/user.svg" alt="user" />
           </div>
           <div class="message">
             <div class="message-name">Алексей</div>
@@ -207,23 +206,23 @@
             </div>
           </div>
         </div>
-
-        <div class="message-wrapper message-rigth">
+    
+        <div class="message-wrapper message-right">
           <div class="message">
-            <div class="message-name">Специалист Иван</div>
-            <div class="message-text">
+            <div class="message-name-right">Специалист Иван</div>
+            <div class="message-text-right">
               Asisti обеспечивает прямую связь со специалистом через встроенный
               чат. Можно задавать вопросы, делиться своим прогрессом и получать
               необходимые рекомендации.
             </div>
           </div>
-          <div class="message-avatar">
+          <div class="message-avatar-right">
             <img src="./static/img/stethoscope.svg" alt="stethoscope" />
           </div>
         </div>
-
+    
         <div class="message-wrapper message-left">
-          <div class="message-avatar">
+          <div class="message-avatar-left">
             <img src="./static/img/user.svg" alt="user" />
           </div>
           <div class="message">
@@ -233,6 +232,7 @@
         </div>
       </div>
     </section>
+    
 
     <section class="functional" id="functional">
       <div class="functional-title-container">
@@ -284,135 +284,73 @@
       </p>
     </section>
 
-    <section class="subscriptions">
-      <div class="container">
-          <h1>Подписки</h1>
+    <section class="cooperation" id="cooperation">
+      <h2 class="cooperation-title">Свяжитесь с нами</h2>
 
-          <!-- Информационный блок -->
-          <div class="features">
-              <ul>
-                  <p>Во все подписки входят следующие функции:</p>
-                  <li>
-                      <span class="icon"></span> Доступ к сервису
-                  </li>
-                  <li>
-                      <span class="icon"></span> Тренировки с комментариями по выполнению в режиме реального времени
-                  </li>
-                  <li>
-                      <span class="icon"></span> Рекомендации от врача
-                  </li>
-                  <li>
-                      <span class="icon"></span> Просмотр своего прогресса по тренировкам
-                  </li>
-              </ul>
-              <!-- Изображение справа -->
-              <div class="features-card">
-                  <img src="images/subscription-card.png" alt="Подписка пользователя">
-              </div>
-          </div>
+      <p class="cooperation-descr">
+        Если у вас есть вопросы или вы хотите узнать подробнее об AsistI,
+        оставьте свои контактные данные.
+      </p>
+      <p class="cooperation-descr-2">
+        Наша команда свяжется с Вами в ближайшее время.
+      </p>
 
-          <!-- Цены на подписки -->
-          <div class="pricing-title">Различием между подписками является время их действия:</div>
-          <div class="pricing">
-              <div class="plan">
-                  <h3>На месяц</h3>
-                  <p>1500₽</p>
-                  <span>1500₽/месяц</span>
-              </div>
-              <div class="plan">
-                  <h3>На 3 месяца</h3>
-                  <p>4275₽</p>
-                  <span>1425₽/месяц</span>
-                  <div class="discount">-5%</div>
-              </div>
-              <div class="plan popular">
-                  <h3>На 6 месяцев</h3>
-                  <p>8100₽</p>
-                  <span>1350₽/месяц</span>
-                  <div class="tag">Популярный</div>
-                  <div class="discount">-10%</div>
-              </div>
-              <div class="plan">
-                  <h3>На 12 месяцев</h3>
-                  <p>14400₽</p>
-                  <span>1200₽/месяц</span>
-                  <div class="discount">-20%</div>
-              </div>
-          </div>
+      <div class="cooperation-wrapper">
+        <img class="cooperation-img" src="./static/img/cooperation-man.svg" />
+        <form class="form" action="/bot" method="post" id="contactForm">
+          <h3 class="form-title">Остались вопросы?</h3>
+          <p class="form-text">
+            Наша команда свяжется с Вами в ближайшее время.
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="name"
+            placeholder="ФИО *"
+            name="name"
+            required
+          />
+          <input
+            type="email"
+            class="input"
+            id="email"
+            placeholder="Почта *"
+            name="email"
+            required
+          />
+          <input
+            required
+            class="input"
+            id="phone"
+            placeholder="Номер телефона *"
+            name="phone"
+            maxlength="18"
+          />
+          <input
+            name="organization_name"
+            type="text"
+            id="organization_name"
+            class="input"
+            placeholder="Наименование организации"
+          />
+          <input
+            name="message"
+            type="text"
+            id="message"
+            class="input"
+            placeholder="Комментарий или вопрос"
+          />
+          <button
+            class="btn-coop btn-coop-disabled"
+            type="submit"
+            formmethod="post"
+            disabled
+          >
+            Связаться
+          </button>
+        </form>
       </div>
-  </section>
-  
-      <!-- Свяжитесь с нами -->
-      <section class="contact">
-        <div class="container">
-          <h2>Свяжитесь с нами</h2>
-          <div class="content">
-            <div class="illustration">
-              <img src="static\img\cooperation-man.svg" alt="Доктор" />
-            </div>
-            <div class="form-container">
-              <form>
-                  <p><strong>Будьте внимательны!</strong><br>Для представителей организаций используется иная форма.</p>
-                  <button type="button" class="organization-form-btn">Форма для организаций</button>
-          
-                  <label for="name">Мои Ф.И.О.*</label>
-                  <input type="text" id="name" placeholder="Ваше Ф.И.О." required>
-          
-                  <label for="email">Мой email*</label>
-                  <input type="email" id="email" placeholder="Адрес вашей электронной почты" required>
-          
-                  <label for="phone">Мой номер телефона*</label>
-                  <input type="tel" id="phone" placeholder="Ваш номер телефона" required>
-          
-                  <label for="doctor">Врач, рекомендовавший программу</label>
-                  <input type="text" id="doctor" placeholder="Фамилия и инициалы">
-          
-                  <label for="dob">Дата рождения</label>
-                  <input type="text" id="dob" placeholder="Ваша дата рождения в формате ДД.ММ.ГГГГ">
-          
-                  <label for="region">Регион</label>
-                  <input type="text" id="region" placeholder="Ваш регион">
-          
-                  <label for="question">Имеете конкретный вопрос?</label>
-                  <textarea id="question" placeholder="Оставьте комментарий или вопрос"></textarea>
-              </form>
-              <div class="form-footer">
-                <p>Нажимая на "Связаться", я подтверждаю, что прочитал(а) и понял(а) <a href="#">Политику Конфиденциальности</a>.</p>
-                <button type="submit">Связаться</button>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
-  
-      <!-- FAQ -->
-      <section class="faq">
-        <div class="container">
-          <h2>Часто задаваемые вопросы</h2>
-          <div class="faq-item">
-            <details>
-              <summary>Инструкция по первому запуску Asisti</summary>
-              <p>Здесь текст со инструкцией.</p>
-            </details>
-            <details>
-              <summary>У меня проблема с камерой, что делать?</summary>
-              <p>Ответ на вопрос.</p>
-            </details>
-            <details>
-              <summary>Какие требования к оборудованию?</summary>
-              <p>Ответ на вопрос.</p>
-            </details>
-            <details>
-              <summary>С кем вы работаете?</summary>
-              <p>Ответ на вопрос.</p>
-            </details>
-            <details>
-              <summary>Как работает ИИ?</summary>
-              <p>Ответ на вопрос.</p>
-            </details>
-          </div>
-        </div>
-      </section>
+    </section>
 
     <footer class="footer">
       <img src="./static/img/logo.svg" alt="asisti" />
