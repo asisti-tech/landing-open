@@ -78,8 +78,8 @@
 
 .features .icon {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 35.62px;
+    height: 35.62px;
     background-color: #fff;
     border-radius: 50%;
     margin-right: 10px;
@@ -88,13 +88,19 @@
 /* Картинка справа */
 .features-card {
     flex-shrink: 0;
-    width: 200px;
-    transform: rotate(10deg);
+    width: 243px;
+    height: 161px;
+    position: relative;
+    left: 32px;
+    bottom: 42px;
+    gap: 0px;
+    border-radius: 12.88px 0px 0px 0px;
+    opacity: 0px;
+
 }
 
 .features-card img {
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Заголовок блока с ценами */

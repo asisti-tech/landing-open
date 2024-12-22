@@ -30,29 +30,40 @@
     overflow: hidden; /* Чтобы обрезать внутренние элементы */
 }
 
+
 .faq-item details {
     background-color: #fff;
 }
 
 .faq-item details summary {
-    font-size: 1rem;
-    padding: 1.5rem; /* Увеличенная высота кнопок */
+    font-size: 20px;
+    color: #5B5B5B;
+    padding: 1.5rem; /* Отступы внутри кнопки */
     cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Используем flexbox */
+    align-items: center; /* Центрируем элементы по вертикали */
+    justify-content: space-between; /* Текст слева, стрелка справа */
+    gap: 1rem; /* Отступ между иконкой и текстом */
     list-style: none;
     background-color: #fff;
     transition: background-color 0.3s ease;
-    border-bottom: none; /* Убираем линии между элементами */
+    border-bottom: none;
 }
 
+.faq-item details summary img {
+    width: 24px; /* Фиксированная ширина иконки */
+    height: 24px; /* Фиксированная высота иконки */
+    margin-left: 10px; /* Увеличенный отступ от левой границы */
+    object-fit: contain; /* Удержание пропорций иконки */
+}
+
+
 .faq-item details summary:hover {
-    background-color: #f7faff; /* Цвет при наведении */
+    background-color: #F4F9FF; /* Цвет при наведении */
 }
 
 .faq-item details[open] summary {
-    background-color: #e6f7ff; /* Цвет при открытии */
+    background-color: #F4F9FF; /* Цвет при открытии */
 }
 
 .faq-item details:last-child summary {
@@ -72,17 +83,22 @@
     display: none; /* Убираем стандартный значок раскрытия */
 }
 
-/* Иконка стрелки раскрытия */
-.faq-item details summary::after {
-    content: '▼';
-    font-size: 0.8rem;
-    margin-left: 0.5rem;
-    color: #999;
-    transform: rotate(0);
+.faq-item details summary img:first-child {
+    flex-shrink: 0; /* Запрещаем масштабирование иконки */
+    margin-right: 0.5rem; /* Отступ между иконкой и текстом */
+}
+
+.faq-item details summary span {
+    flex-grow: 1; /* Растягиваем текст, чтобы занять все доступное пространство */
+}
+
+.arrow-icon {
+    width: 25px;
+    height: 22.92px;
+    margin-left: auto; /* Отодвигаем стрелку вправо */
     transition: transform 0.3s ease;
 }
 
-.faq-item details[open] summary::after {
+details[open] .arrow-icon {
     transform: rotate(-180deg); /* Поворачиваем стрелку при открытии */
-    color: #54c1fb;
 }
