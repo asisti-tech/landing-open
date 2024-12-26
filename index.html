@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="/landingAI/static/styles/advantages.css" />
     <link rel="stylesheet" href="/landingAI/static/styles/review.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/landingAI/static/styles/subscriptions.css">
+    <link rel="stylesheet" href="/landingAI/static/styles/contact.css">
+    <link rel="stylesheet" href="/landingAI/static/styles/faq.css">
     <title>Asisti</title>
   </head>
   <body>
@@ -556,61 +559,161 @@
     </div>
 </section>
 
-    <section class="cooperation" id="cooperation">
-      <h2 class="cooperation-title">Свяжитесь с нами</h2>
+<section class="subscriptions">
+  <div class="container">
+      <h1>Подписки</h1>
 
-      <p class="cooperation-descr">
-        Если у вас есть вопросы или вы хотите узнать подробнее об AsistI, оставьте свои контактные данные. </p>
-      <p class="cooperation-descr-2">
-        Наша команда свяжется с Вами в ближайшее время.
-      </p>
-
-      <div class="cooperation-wrapper">
-        <img class="cooperation-img" src="/landingAI/static/img/cooperation-man.svg" />
-        <form class="form" action="/bot" method="post">
-          <h3 class="form-title">Остались вопросы?</h3>
-          <p class="form-text">Наша команда свяжется с Вами в ближайшее время.</p>
-          <input
-            type="text"
-            class="input"
-            id="name"
-            placeholder="ФИО"
-            name="name"
-            required
-          />
-          <input
-            type="email"
-            class="input"
-            id="email"
-            placeholder="Почта"
-            name="email"
-            required
-          />
-          <input
-            required
-            class="input"
-            id="phone"
-            placeholder="Номер телефона"
-            name="phone"
-          />
-          <input
-            name="organization_name"
-            type="text"
-            id="organization_name"
-            class="input"
-            placeholder="Наименование организации"
-          />
-          <input
-            name="message"
-            type="text"
-            id="message"
-            class="input"
-            placeholder="Комментарий или вопрос"
-          />
-          <button class="btn-coop" type="submit" formmethod="post">Связаться</button>
-        </form>
+      <!-- Информационный блок -->
+      <div class="features">
+          <ul>
+              <p>Во все подписки входят следующие функции:</p>
+              <li>
+                  <img src="static/img/sub-button-1.svg" class="icon"> Доступ к сервису
+              </li>
+              <li>
+                <img src="static/img/sub-button-2.svg" class="icon"> Тренировки с комментариями по выполнению в режиме реального времени
+              </li>
+              <li>
+                <img src="static/img/sub-button-3.svg" class="icon"> Рекомендации от врача
+              </li>
+              <li>
+                <img src="static/img/sub-button-4.svg" class="icon"> Просмотр своего прогресса по тренировкам
+              </li>
+          </ul>
+          <!-- Изображение справа -->
+          <div class="features-card">
+              <img src="static/img/patient-card.svg" alt="Подписка пользователя">
+          </div>
       </div>
-    </section>
+
+      <!-- Цены на подписки -->
+      <div class="pricing-title">Различием между подписками является время их действия:</div>
+      <div class="pricing">
+          <div class="plan">
+              <h3>На месяц</h3>
+              <p>1500₽</p>
+              <span>1500₽/месяц</span>
+          </div>
+          <div class="plan">
+              <h3>На 3 месяца</h3>
+              <p>4275₽</p>
+              <span>1425₽/месяц</span>
+              <div class="discount">-5%</div>
+          </div>
+          <div class="plan popular">
+              <h3>На 6 месяцев</h3>
+              <p>8100₽</p>
+              <span>1350₽/месяц</span>
+              <div class="tag">Популярный</div>
+              <div class="discount">-10%</div>
+          </div>
+          <div class="plan">
+              <h3>На 12 месяцев</h3>
+              <p>14400₽</p>
+              <span>1200₽/месяц</span>
+              <div class="discount">-20%</div>
+          </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Свяжитесь с нами -->
+  <section class="contact">
+    <div class="container">
+      <h2>Свяжитесь с нами</h2>
+      <div class="content">
+        <div class="illustration">
+          <img src="static\img\cooperation-man.svg" alt="Доктор" />
+        </div>
+        <div class="form-container">
+          <form>
+              <p><strong>Будьте внимательны!</strong><br>Для представителей организаций используется иная форма.</p>
+              <button type="button" class="organization-form-btn">
+                <img src="static/img/li_building-2.svg" alt="Иконка" class="organization-icon">
+                Форма для организаций
+              </button>
+      
+              <label for="name">Мои Ф.И.О.*</label>
+              <input type="text" id="name" placeholder="Ваше Ф.И.О." required>
+      
+              <label for="email">Мой email*</label>
+              <input type="email" id="email" placeholder="Адрес вашей электронной почты" required>
+      
+              <label for="phone">Мой номер телефона*</label>
+              <input type="tel" id="phone" placeholder="Ваш номер телефона" required>
+      
+              <label for="doctor">Врач, рекомендовавший программу</label>
+              <input type="text" id="doctor" placeholder="Фамилия и инициалы">
+      
+              <label for="dob">Дата рождения</label>
+              <input type="text" id="dob" placeholder="Ваша дата рождения в формате ДД.ММ.ГГГГ">
+      
+              <label for="region">Регион</label>
+              <input type="text" id="region" placeholder="Ваш регион">
+      
+              <label for="question">Имеете конкретный вопрос?</label>
+              <textarea id="question" placeholder="Оставьте комментарий или вопрос"></textarea>
+          </form>
+          <div class="form-footer">
+              <p>
+                  Нажимая на "Связаться", я подтверждаю, что прочитал(а) и понял(а) 
+                  <a href="#">Политику Конфиденциальности</a>.
+              </p>
+<button type="submit" class="footer-submit-btn">Связаться</button>
+</div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="container">
+      <h2>Часто задаваемые вопросы</h2>
+      <div class="faq-item">
+        <details>
+          <summary>
+            <img src="static/img/li_baby.svg">
+            <span></spam>Инструкция по первому запуску Asisti</span>
+            <img src="static/img/chevron-down.svg" alt="Стрелка" class="arrow-icon">
+          </summary>
+          <img src="static/img/instruction.svg">
+        </details>
+        <details>
+          <summary>
+            <img src="static/img/li_camera-off.svg">
+          <span>У меня проблема с камерой, что делать?</span>
+            <img src="static/img/chevron-down.svg" alt="Стрелка" class="arrow-icon">
+          </summary>
+          <p>Ответ на вопрос.</p>
+        </details>
+        <details>
+          <summary>
+            <img src="static/img/monitor-cog.svg">
+          <span>Какие требования к оборудованию?</span>
+            <img src="static/img/chevron-down.svg" alt="Стрелка" class="arrow-icon">
+          </summary>
+          <p>Ответ на вопрос.</p>
+        </details>
+        <details>
+          <summary>
+            <img src="static/img/briefcase-business.svg">
+          <span>С кем вы работаете?</span>
+            <img src="static/img/chevron-down.svg" alt="Стрелка" class="arrow-icon">
+          </summary>
+          <p>Ответ на вопрос.</p>
+        </details>
+        <details>
+          <summary>
+            <img src="static/img/brain-circuit.svg">
+          <span>Как работает ИИ?</span>
+            <img src="static/img/chevron-down.svg" alt="Стрелка" class="arrow-icon">
+          </summary>
+          <p>Ответ на вопрос.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
     <footer class="footer">
       <img src="/landingAI/static/img/logo.svg" alt="asisti" />
