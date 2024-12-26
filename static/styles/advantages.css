@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+    --main-bg-color: #e3f1ff;
+    --secondary-bg-color: #e6f7ff;
+    --text-color: #555;
+    --title-color: #0f3f62;
+    --main-blue-color: #559BED;
+    --white-color: #fff;
+    --light-grey-color: #eee;
+    --grey-color:#ddd;
+}
+
+.advantages {
+    padding: 31px 43px;
+    background: linear-gradient(to bottom, var(--main-bg-color), var(--secondary-bg-color));
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.advantages-title {
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--title-color);
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.advantages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+.advantage-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+       transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
+.advantage-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.advantage-header-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.advantage-header-title {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+     margin-top: 5px;
+    margin-left: 5px;
+}
+
+.advantage-description,
+.doctor-reccomendations-title,
+.doctor-reccomendations-item,
+.doctor-reccomendations-date,
+.chat-example-text,
+.workout-details-label,
+.workout-details-title,
+.workout-details-info,
+.workout-details-time,
+.achievement-item-title,
+.achievement-item-description,
+.achievement-item-badge{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+
+.advantage-details {
+    display: flex;
+    width: 100%;
+    gap: 5%;
+}
+
+.advantage-card:first-of-type .advantage-details .doctor-reccomendations {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to bottom, var(--main-bg-color), var(--secondary-bg-color));
+    margin-left: 10%;
+    margin-top: 2%;
+    min-height: auto;
+}
+
+.advantage-card:first-of-type .advantage-details .doctor-reccomendations h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+.advantage-card:first-of-type .advantage-details .doctor-reccomendations li {
+    margin-bottom: 10px;
+    background-color: var(--white-color);
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.advantage-card:first-of-type .advantage-details .doctor-reccomendations li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantage-card:first-of-type .advantage-details .doctor-reccomendations .date {
+    font-size: 13px;
+    color: grey;
+}
+
+
+.advantage-card:first-of-type .advantage-details .chat-example {
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 70%;
+    padding-left: 20px;
+    margin-right: 10%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.advantage-card:first-of-type .advantage-details .chat-example h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+.advantage-card:first-of-type .advantage-details .chat-example p {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    flex: 0;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.advantage-card:first-of-type .advantage-details .chat-example p:nth-of-type(1) {
+   background: linear-gradient(to bottom, var(--main-bg-color), var(--secondary-bg-color));
+    color: var(--main-blue-color);
+    width: fit-content;
+    margin-left: 0;
+}
+
+.advantage-card:first-of-type .advantage-details .chat-example p:nth-of-type(2) {
+    background-color: var(--main-blue-color);
+    color: var(--white-color);
+    margin-left: 30%;
+    width: fit-content;
+}
+
+.advantage-card:first-of-type .advantage-details .chat-example p:nth-of-type(3) {
+    background: linear-gradient(to bottom, var(--main-bg-color), var(--secondary-bg-color));
+    color: var(--main-blue-color);
+    width: fit-content;
+    margin-left: 0;
+}
+
+.workout-details {
+    border: 1px solid var(--light-grey-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20%);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.workout-details h4 {
+    font-size: 17px;
+    margin-bottom: 5px;
+    color: var(--title-color);
+    font-weight: 500;
+     margin: 10px 0;
+    align-self: flex-start;
+}
+
+.workout-details > p {
+    margin-top: 5px;
+    width: 100%;
+    text-align: left;
+}
+
+.workout-details p.time {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.workout-details p.time span {
+    margin-right: 5px;
+}
+
+.workout-details p.time img {
+    width: 15px;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+}
+.efficiency-improvement-achievements > .achievement-item:first-child {
+    width: 90%;
+    align-self: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(to bottom, var(--main-bg-color), var(--secondary-bg-color));
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.efficiency-improvement-achievements > .achievement-item:first-child .achievement-item p {
+    font-size: 22px;
+}
+.efficiency-improvement-achievements > .achievement-item:first-child .achievement-item .badge{
+    font-size: 13px;
+      height: 75px;
+}
+
+.efficiency-improvement-achievements > .achievement-item:nth-child(2) {
+    width: 80%;
+    align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+    background: linear-gradient(to bottom, #5a76af ,var(--secondary-bg-color));
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.efficiency-improvement-achievements > .achievement-item:nth-child(2) .achievement-item p {
+    font-size: 16px;
+}
+
+.achievement-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    align-self: flex-start;
+    flex-shrink: 0;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.achievement-item p {
+    margin-right: 10px;
+    color: var(--title-color);
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    white-space: normal;
+}
+
+.efficiency-improvement-achievements > .achievement-item:first-child .achievement-item p:first-child,
+.efficiency-improvement-achievements > .achievement-item:nth-child(2) .achievement-item p:first-child
+{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+.achievement-item .badge {
+    background-color: #007bff;
+    color: var(--white-color);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 55px;
+    flex-direction: column;
+    flex-shrink: 0;
+    
+}
+.achievement-item .badge img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.achievement-item::after {
+    content: "";
+    display: block;
+    height: 4px;
+    width: 80%;
+    background: linear-gradient(to right, var(--title-color) 80%, var(--grey-color) 80%);
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.accessibility-diagram {
+    border: 1px solid var(--light-grey-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+
+.accessibility-diagram-img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .advantages {
+        padding: 31px 25px;
+    }
+     .advantages-container{
+           width: 100%;
+           margin: 0;
+    }
+     .advantage-details {
+       flex-direction: column;
+           gap: 10px;
+    }
+    .advantage-card:first-of-type .advantage-details .doctor-reccomendations {
+        width: 100%;
+        margin-bottom: 10px;
+          margin-left: 0;
+    }
+
+    .advantage-card:first-of-type .advantage-details .chat-example {
+        width: 100%;
+        padding-left: 0;
+       margin-right: 0;
+    }
+}
+.advantage-card-hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.advantage-card.advantage-card-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
