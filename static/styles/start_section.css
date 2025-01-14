@@ -1,0 +1,84 @@
+.start {
+    height: 100vh;
+    width: 100%;
+    padding: 43px 43px 0px 43px;
+    position: relative;
+    overflow: hidden;
+}
+
+.start__overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 180px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.02) 9%, rgba(245, 245, 245, 0.06) 19%, rgba(245, 245, 245, 0.12) 28%, rgba(245, 245, 245, 0.2) 38%, rgba(245, 245, 245, 0.29) 48%, rgba(245, 245, 245, 0.39) 57%, rgba(245, 245, 245, 0.5) 66%, rgba(245, 245, 245, 0.61) 74%, rgba(245, 245, 245, 0.71) 81%, rgba(245, 245, 245, 0.8) 88%, rgba(245, 245, 245, 0.88) 93%, rgba(245, 245, 245, 0.95) 97%, #f5f5f5 99%, #f5f5f5 100%);
+}
+
+.start__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 168px;
+}
+
+.start__nav {
+    display: flex;
+    align-items: center;
+    color: #5b5b5b;
+    gap: 32px;
+}
+
+.start__nav_asisti {
+    color: #559BED !important;
+}
+
+.start__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.start__title {
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.start__descr {
+    font-size: 20px;
+    color: #5b5b5b;
+}
+
+.start__btns {
+    display: flex;
+    gap: 40px;
+}
+
+.start__btn_patient {
+    border-radius: 25px;
+    font-weight: 600;
+    display: flex;
+    gap: 13px;
+}
+
+.start__btn_org {
+    border-radius: 25px;
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid #E3F1FF;
+}
+
+.start__btn_org:hover {
+    background: #e9e9e9;
+}
+
+.start__man {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
