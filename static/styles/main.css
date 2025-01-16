@@ -13,6 +13,7 @@
 @import "./start_section.css";
 @import "./suitable.css";
 @import "./advantages.css";
+@import "./reviews.css";
 
 @font-face {
   font-family: "Space Age Cyrillic";
