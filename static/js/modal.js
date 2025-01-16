@@ -22,13 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
         modalContent.author.textContent = author;
         modalContent.text.textContent = text;
 
+        document.body.style.overflow = 'hidden';
         modal.style.display = 'block';
     }
+
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+
+    closeButton.addEventListener('click', closeModal);
     
     modal.addEventListener('click', (e) => {        
-        if (e.target === modalContentElement) {
-            modal.style.display = 'none';
-        }
+        if (e.target === modalContentElement) closeModal()
     });
     
     reviews.forEach((review) => {

@@ -126,9 +126,14 @@
   transform: none;
 }
 
+.modal__wrapper{
+  position: relative;
+}
+
 .modal__close {
   cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
+  z-index: 11;
 }
