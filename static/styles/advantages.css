@@ -24,6 +24,15 @@
     gap: 20px;
     border-radius: 15px;
     background: #fff;
+
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.advantages__item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .item__title {
