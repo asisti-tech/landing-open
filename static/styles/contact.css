@@ -19,29 +19,22 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
   }
   
   .content {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: flex-start; /* Выравнивание элементов по верхнему краю */
     gap: 2rem;
     max-width: 100%;
   }
   
   .illustration {
-    position: relative;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100%;
-  }
-  
-  .illustration img {
     position: absolute;
-    width: 3000px;
+    bottom: 0;
+    left: -20%;
   }
   
   .form-container {
