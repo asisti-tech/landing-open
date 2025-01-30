@@ -492,7 +492,7 @@
           <div class="content">
             <img src="static\img\cooperation-man.svg" alt="Доктор" class="illustration"/>
             <div class="form-container">
-              <form>
+              <form id="form-patient">
                   <p><strong>Будьте внимательны!</strong><br>Для представителей организаций используется иная форма.</p>
                   <button type="button" class="organization-form-btn">
                     <img src="static/img/li_building-2.svg" alt="Иконка" class="organization-icon">
@@ -520,6 +520,31 @@
                   <label for="question">Имеете конкретный вопрос?</label>
                   <textarea id="question" placeholder="Оставьте комментарий или вопрос"></textarea>
               </form>
+              <form id="form-organization">
+                <p><strong>Будьте внимательны!</strong><br>Для пациентов используется иная форма.</p>
+                <button type="button" class="patient-form-btn">
+                  <img src="static/img/im_patient.svg" alt="Иконка" class="organization-icon">
+                  Форма для пациента
+                </button>
+        
+                <label for="name">Мои Ф.И.О.*</label>
+                <input type="text" id="name" placeholder="Ваше Ф.И.О." required>
+        
+                <label for="email">Мой email*</label>
+                <input type="email" id="email" placeholder="Адрес вашей электронной почты" required>
+        
+                <label for="phone">Мой номер телефона*</label>
+                <input type="tel" id="phone" placeholder="Ваш номер телефона" required>
+        
+                <label for="organization">Наименование организации</label>
+                <input type="text" id="organization" placeholder="Наименование вашей организации">
+        
+                <label for="region">Регион</label>
+                <input type="text" id="region" placeholder="Ваш регион">
+        
+                <label for="question">Имеете конкретный вопрос?</label>
+                <textarea id="question" placeholder="Оставьте комментарий или вопрос"></textarea>
+            </form>
               <div class="form-footer">
                   <p>
                       Нажимая на "Связаться", я подтверждаю, что прочитал(а) и понял(а) 
@@ -595,5 +620,6 @@
     <script type="module" src="./static/js/modal.js"></script>
     <script type="module" src="./static/js/advantages.js"></script>
     <script type="module" src="./static/js/suitable.js"></script>
+    <script type="module" src="./static/js/toggleForm.js"></script>
   </body>
 </html>

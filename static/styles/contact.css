@@ -121,23 +121,38 @@
 
   
   label {
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #353535;
   }
   
   input,
   textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: 1px solid #ebebeb;
+    border-radius: 7px;
+    padding: 14px 13px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    outline: none;
+  }
+
+  input:focus, textarea:focus {
+    background-color: #F7FCFF;
+    border: solid 1px #559BED;
+  }
+
+  textarea:focus-within, textarea:focus-visible {
+    background-color: #F7FCFF;
+    border: solid 1px #559BED;
   }
   
   textarea {
     min-height: 100px;
     resize: none;
   }
-
   
   .agreement {
     font-size: 0.875rem;
@@ -176,4 +191,21 @@
     width: 20px;
     height: 20px;
     object-fit: contain;
+}
+
+.patient-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  gap: 0.5rem;
+  border-radius: 7px;
+  background-color: #559BED;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.patient-form-btn:hover {
+  background-color: #3576C2;
 }
